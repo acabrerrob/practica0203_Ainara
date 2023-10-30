@@ -6,9 +6,11 @@
 subjectsList = ['Matemáticas', 'Física', 'Química', 'Historia', 'Lengua']
 grades = []
 for x in subjectsList:
-    grade = int (input('Introduzca la nota de ', ))
+    grade = float (input('Introduzca la nota de '))
 
     grades.append(grade)
+
+print(len(subjectsList))
 
 print('En ', subjectsList[0], 'has sacado ', grades[0])
 print('En ', subjectsList[1], 'has sacado ', grades[1])
