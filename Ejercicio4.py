@@ -4,3 +4,6 @@
   
 numbers = []
 lotteryNumber = int (input('Introduzca el número de lotería ganador: '))
+
+numbers.append(lotteryNumber)
+print(numbers.sort())
