@@ -1,5 +1,19 @@
-# Escribir un programa que almacene las asignaturas de un curso
-# (por ejemplo Matemáticas, Física, Química, Historia y Lengua)
-# en una lista, pregunte al usuario la nota que ha sacado en cada
-# asignatura y elimine de la lista las asignaturas aprobadas. Al 
-# final el programa debe mostrar por pantalla las asignaturas que el usuario tiene que repetir.
+subjects = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+grades = []
+
+for subject in subjects:
+    grade = float(input(f"Ingrese la nota que obtuvo en {subject}: "))
+    grades.append(grade)
+ 
+
+suspense = []
+
+for position in range(len(subjects)):
+    if grades[position] < 5:
+        suspense.append(subjects[position])
+
+if len(suspense) != 0 :
+    print('Has de repetir las siguientes asignaturas: ' ) 
+    print(suspense) 
+else :
+    print('Felicidades, aprobaste todo.')
